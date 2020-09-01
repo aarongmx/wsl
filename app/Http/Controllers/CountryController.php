@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Country;
 
-class CountryController extends Controller
+class CountryController extends ApiController
 {
     public function __invoke()
     {
-        return Country::paginate();
+        return $this->successResponse(Country::all());
     }
 }

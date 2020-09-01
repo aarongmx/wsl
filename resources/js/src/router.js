@@ -990,6 +990,62 @@ const router = new Router({
             rule: 'editor'
           }
         },
+        {
+          path: '/pages/containers/index',
+          name: 'page-containers',
+          component: () => import('@/views/pages/containers/Index.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'Pages' },
+              { title: 'Invoice', active: true }
+            ],
+            pageTitle: 'Containers',
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/pages/containers/register',
+          name: 'page-containers-register',
+          component: () => import('@/views/pages/containers/Register.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'Pages' },
+              { title: 'Invoice', active: true }
+            ],
+            pageTitle: 'Register',
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/pages/ports/index',
+          name: 'page-ports',
+          component: () => import('@/views/pages/ports/Index.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'Pages' },
+              { title: 'Invoice', active: true }
+            ],
+            pageTitle: 'Ports',
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/pages/ports/register',
+          name: 'page-ports-register',
+          component: () => import('@/views/pages/ports/Register.vue'),
+          meta: {
+            breadcrumb: [
+              { title: 'Home', url: '/' },
+              { title: 'Pages' },
+              { title: 'Invoice', active: true }
+            ],
+            pageTitle: 'Register',
+            rule: 'editor'
+          }
+        },
 
         // =============================================================================
         // CHARTS & MAPS

@@ -35,10 +35,53 @@ export default [
   },
   {
     url: null,
-    name: 'App',
+    name: 'Contenedores',
     icon: 'AppIcon',
-    i18n: 'App',
+    i18n: 'Contenedores',
     submenu: [
+      {
+        url: '/pages/containers/index',
+        name: 'Todos',
+        icon: 'AnchorIcon',
+        slug: 'extra-component-datepicker',
+        i18n: 'Todos'
+      },
+      {
+        url: '/pages/containers/register',
+        name: 'Registrar',
+        icon: 'AnchorIcon',
+        slug: 'extra-component-datepicker',
+        i18n: 'Registrar'
+      }
+    ]
+  },
+  {
+    url: null,
+    name: 'Puertos',
+    icon: 'AppIcon',
+    i18n: 'Puertos',
+    submenu: [
+      {
+        url: '/pages/ports/index',
+        name: 'Todos',
+        icon: 'AnchorIcon',
+        slug: 'extra-component-datepicker',
+        i18n: 'Todos'
+      },
+      {
+        url: '/pages/ports/register',
+        name: 'Registrar',
+        icon: 'AnchorIcon',
+        slug: 'extra-component-datepicker',
+        i18n: 'Registrar'
+      }
+    ]
+  },
+  {
+    header: 'Applications',
+    icon: 'PackageIcon',
+    i18n: 'Aplicaciones',
+    items: [
       {
         url: '/apps/calendar/vue-simple-calendar',
         name: 'Calendario',
@@ -47,10 +90,6 @@ export default [
         i18n: 'Calendario'
       }
     ]
-    // header: 'App',
-    // icon: 'PackageIcon',
-    // i18n: 'Aplicaciones',
-    // items: []
   }
 ]
 

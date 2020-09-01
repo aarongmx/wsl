@@ -14,7 +14,7 @@ class PortController extends ApiController
      */
     public function index()
     {
-        return Port::paginate();
+        return Port::with('country')->paginate();
     }
 
     /**
